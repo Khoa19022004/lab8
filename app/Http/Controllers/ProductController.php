@@ -22,7 +22,7 @@ class ProductController extends Controller
             // 'data'=> new ProductResource($products)
             'data'=> ProductResource::collection($products)
         ];
-        return response()->json($arr); 
+        return response()->json($arr,200); 
     }
 
     /**
@@ -57,7 +57,7 @@ class ProductController extends Controller
                 'data'=> new ProductResource($product) 
             ]; 
         return response()->json($arr, 201); 
-    }c
+    }
 
     /**
      * Display the specified resource.
